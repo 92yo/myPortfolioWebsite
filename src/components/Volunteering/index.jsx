@@ -1,11 +1,11 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
-import NavBar from "../../components/NavBar";
+import CopyRight from "../../components/CopyRight";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    // background: "#233",
+    marginTop: 80,
   },
   timeLine: {
     position: "relative",
@@ -29,10 +29,10 @@ const useStyles = makeStyles((theme) => ({
       "&:before": {
         left: "calc(50% - 1px)",
         right: "auto",
-      }
-    }
-},
-timeLineItem:{
+      },
+    },
+  },
+  timeLineItem: {
     padding: "1rem",
     borderBottom: "2px solid tan",
     position: "relative",
@@ -43,31 +43,31 @@ timeLineItem:{
       position: "absolute",
     },
     "&:before": {
-        content: "''",
-        position: "absolute",
-        right: "-0.625rem",
-        top: "calc(50% - 5px)",
-        borderStyle: "solid",
-        borderColor: "tomato tomato transparent transparent",
-        borderWidth: "0.625rem",
-        transofrm: "rotate(45deg)",
-      },
-      [theme.breakpoints.up("md")]: {
-        width: "44%",
+      content: "''",
+      position: "absolute",
+      right: "-0.625rem",
+      top: "calc(50% - 5px)",
+      borderStyle: "solid",
+      borderColor: "tomato tomato transparent transparent",
+      borderWidth: "0.625rem",
+      transofrm: "rotate(45deg)",
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "44%",
+      margin: "1rem",
+      "&:nth-of-type(2n)": {
+        float: "right",
         margin: "1rem",
-        "&:nth-of-type(2n)": {
-          float: "right",
-          margin: "1rem",
-          borderColor: "tan",
-        },
-        "&:nth-of-type(2n):before": {
-          right: "auto",
-          left: "-0.625rem",
-          borderColor: "transparent transparent tomato tomato",
-        },
+        borderColor: "tan",
       },
-},
-timeLineYear: {
+      "&:nth-of-type(2n):before": {
+        right: "auto",
+        left: "-0.625rem",
+        borderColor: "transparent transparent tomato tomato",
+      },
+    },
+  },
+  timeLineYear: {
     textAlign: "center",
     maxWidth: "9.375rem",
     margin: "0 3rem 0 auto",
@@ -88,8 +88,8 @@ timeLineYear: {
       },
       "&:nth-of-type(2n):before": {
         dispaly: "none",
-      }
-    }
+      },
+    },
   },
   heading: {
     color: "tomato",
@@ -97,60 +97,86 @@ timeLineYear: {
     textTransofrm: "uppercase",
   },
   subHeading: {
-      color: "white",
-      padding: "0",
-      textTransofrm: "uppercase"
-  }
+    color: "white",
+    padding: "0",
+    textTransofrm: "uppercase",
+  },
 }));
 
-export default function Resume() {
+export default function Volunteering() {
   const classes = useStyles();
 
   return (
     <>
-      <NavBar />
       <Box component="header" className={classes.mainContainer}>
         <Typography variant="h4" align="center" className={classes.heading}>
-          Experience
+          Volunteering
         </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            2020
+            2015 - 2016
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
-            <Typography variant="h5" align="center" className={classes.subHeading}>
-              Full Stack Developer
+            <Typography
+              variant="h5"
+              align="center"
+              className={classes.subHeading}
+            >
+              Mentor
             </Typography>
-            <Typography variant="body1" align="center" style={{color: "tomato"}}>
-              Narjes Media(3/2020 - 4/2020)
+            <Typography
+              variant="body1"
+              align="center"
+              style={{ color: "tomato" }}
+            >
+              Perach, Haifa, Israel
             </Typography>
-            <Typography variant="subtitle1" align="center" style={{color: "tan"}}>
-            Worked as a Full Stack Developer for Narjes-Media through Kav-Mashve building their Wajjbat-Social platform.
+            <Typography
+              variant="subtitle1"
+              align="center"
+              style={{ color: "wheat" }}
+            >
+              Worked with a group of three children. Playing, teaching and
+              talking to them on various subjects, especially the difficulties
+              they face on a daily basis.
             </Typography>
           </Box>
           <Typography
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            2019/2020
+            2008 - 2010
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
-            <Typography variant="h5" align="center" className={classes.subHeading}>
-              Full Stack Developer
+            <Typography
+              variant="h5"
+              align="center"
+              className={classes.subHeading}
+            >
+              Packaging Distribution
             </Typography>
-            <Typography variant="body1" align="center" style={{color: "tomato"}}>
-              Kav Mashvi - Coding Bootcamp(11/2019 - 4/2020)
+            <Typography
+              variant="body1"
+              align="center"
+              style={{ color: "tomato" }}
+            >
+              Nazareth Orthodox Charitable Society, Nazareth, Israel
             </Typography>
-            <Typography variant="subtitle1" align="center" style={{color: "tan"}}>
-            Trained as a Full Stack Developer through Founders and Coders - Kav Mashvi, Building numerous Projects.
-            Final Project built was a website which makes it easier for our clients to donate clothes/resources without the hassle of worrying about finding time to give it to the orgs.
+            <Typography
+              variant="subtitle1"
+              align="center"
+              style={{ color: "wheat" }}
+            >
+              Packing Various resources from food to donated clothes and
+              allocating them to the homes of the less fortunate and needy.
             </Typography>
           </Box>
         </Box>
       </Box>
+      <CopyRight />
     </>
   );
 }

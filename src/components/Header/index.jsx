@@ -19,12 +19,12 @@ const useStyles = makeStyles(theme=> ({
     },
     mainContainer: {
         position: "absolute",
-        top: "50%",
+        top: "40%",
         left: "50",
         transofrm: "translate(-50%, -50%)",
         width: "100vw",
         textAlign: "center",
-        zIndex: 1
+        zIndex: 1,
     }
 }))
 
@@ -32,6 +32,7 @@ export default function Header() {
     const classes = useStyles()
 
   return (
+    <>
     <Box className={classes.mainContainer}>
         <Grid container justify="center">
         <Avatar className={classes.avatar} src={avatar} alt="Yousef Rizik" />
@@ -44,5 +45,7 @@ export default function Header() {
         <Typed strings={["Full Stack Developer", "MERN Stack"]} typeSpeed={40} backSpeed={60} loop />
       </Typography>
     </Box>
+ 
+    </>
   );
 }

@@ -1,6 +1,19 @@
 import LandingPage from "./LandingPage";
-import Resume from "./Resume";
-import Portfolio from "./Portfolio";
-import Contact from "./Contact";
+import Experience from "./Experience";
+import Portfolio from "./Projects";
+import Skills from "./Skills";
+import Education from "./Education";
+import Awards from "./Awards";
+import Volunteering from "./Volunteering";
+import About from "./About";
 
-export {LandingPage, Resume, Portfolio, Contact};
+export {
+  LandingPage,
+  Experience,
+  Portfolio,
+  Skills,
+  Education,
+  Awards,
+  Volunteering,
+  About
+};

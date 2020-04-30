@@ -3,6 +3,7 @@ import NavBar from "../../components/NavBar";
 import Header from "../../components/Header";
 import Particles from "react-particles-js";
 import {makeStyles} from "@material-ui/core/styles";
+import CopyRight from "../../components/CopyRight";
 
 const useStyles = makeStyles({
   particle: {
@@ -55,10 +56,14 @@ export default function LandingPage() {
                 opacity_min: 0.1,
                 sync: true
               }
+            },
+            color: {
+              value: '#ff6347'
             }
           }
         }}
       />
+      <CopyRight/>
       </div>  
   );
 }

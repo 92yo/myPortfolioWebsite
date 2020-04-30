@@ -1,6 +1,7 @@
 import React from "react";
 import Projects from "../../components/Projects"
 import NavBar from "../../components/NavBar";
+import CopyRight from "../../components/CopyRight";
 
 export default function Portfolio() {
 
@@ -8,6 +9,7 @@ export default function Portfolio() {
     <>
     <NavBar/>
      <Projects/>
+     <CopyRight/>
     </>
   );
 }
