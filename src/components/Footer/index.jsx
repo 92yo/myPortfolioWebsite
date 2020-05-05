@@ -28,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
 export default function Footer() {
   const classes = useStyles();
   return (
-    <footer >
     <BottomNavigation className={classes.mainContainer} >
       <BottomNavigationAction
         className={classes.root}
@@ -46,6 +45,5 @@ export default function Footer() {
         icon={<Link href="mailto:yousefrizik92@gmail.com"><MailIcon style={{fontSize:"40"}} /></Link>}
       />
     </BottomNavigation>
-    </footer>
   );
 }
