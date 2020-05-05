@@ -35,8 +35,9 @@ p {
 }
 
 @media only screen and (max-width: 570px){
-    .flow-text {
-        line-height: 3.776rem;
+    .flow-text, p{
+        line-height: 3rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -56,6 +57,7 @@ p {
 @media only screen and (min-width: 360px) {
 .flow-text {
     font-size: 1.2rem;
+    line-height: 1.4rem;
 }
 }
 

@@ -32,7 +32,6 @@ import {
   Person,
   Menu,
   Close,
-  ArrowBack
 } from "@material-ui/icons";
 
 const drawerWidth = 241;
@@ -83,6 +82,15 @@ const useStyles = makeStyles((theme) => ({
     width: drawerWidth,
     marginLeft: 0,
   },
+  listItem: {
+    color: 'wheat',
+    [theme.breakpoints.down("md")]: {
+      marginBottom: '0px',
+    },
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: '-10px',
+    },
+  }
 }));
 
 const menuItems = [
@@ -97,7 +105,7 @@ const menuItems = [
     listPath: "/about",
   },
   {
-    listIcon: <School style={{ color: "orange", fontSize: "28px" }} />,
+    listIcon: <School style={{ color: "orange", fontSize: "28px"}} />,
     listText: "Education",
     listPath: "/education",
   },

@@ -18,3 +18,9 @@
     color: wheat;
     font-size: 15px;
   }
+
+@media (min-width: 992px){
+   .container {
+        margin-top: 60px;
+    }
+}

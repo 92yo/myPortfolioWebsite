@@ -26,13 +26,19 @@ import project10 from "../../assets/images/project10.png";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     height: "100%",
+    overflowX: 'hidden',
     marginTop: 80,
+    [theme.breakpoints.up("lg")]: {
+      width: "90%",
+      marginLeft: "8%",
+    },
   },
   cardContainer: {
     maxWidth: 545,
     margin: "1rem auto",
     background: "whitesmoke"
   },
+  
 }));
 
 export default function Projects() {

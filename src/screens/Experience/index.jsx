@@ -54,8 +54,8 @@ timeLineItem:{
         transofrm: "rotate(45deg)",
       },
       [theme.breakpoints.up("md")]: {
-        width: "44%",
-        margin: "1rem",
+        width: "38%",
+      marginLeft: "11%",
         "&:nth-of-type(2n)": {
           float: "right",
           margin: "1rem",

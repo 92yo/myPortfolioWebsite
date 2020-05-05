@@ -1,14 +1,14 @@
 import React from "react";
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { BottomNavigation, BottomNavigationAction, Link } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import MailIcon from "@material-ui/icons/Mail";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#222",
-    width: '100%'
+    width: '100%',
   },
   root: {
     "& .MuiBottomNavigationAction-root": {
@@ -23,11 +23,12 @@ const useStyles = makeStyles({
       },
     },
   },
-});
+}));
 
 export default function Footer() {
   const classes = useStyles();
   return (
+    <footer >
     <BottomNavigation className={classes.mainContainer} >
       <BottomNavigationAction
         className={classes.root}
@@ -45,5 +46,6 @@ export default function Footer() {
         icon={<Link href="mailto:yousefrizik92@gmail.com"><MailIcon style={{fontSize:"40"}} /></Link>}
       />
     </BottomNavigation>
+    </footer>
   );
 }
