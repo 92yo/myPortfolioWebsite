@@ -5,44 +5,44 @@ import "./style.css";
 
 const SKILLS_LIST = [
   {
-    label: "HTML5/CSS3 - 90%",
+    label: "HTML5/CSS3",
+    percentage: "100%",
+  },
+  {
+    label: "JavaScript(ES6)",
     percentage: "90%",
   },
   {
-    label: "ES6 - 85%",
-    percentage: "85%",
-  },
-  {
-    label: "React - 85%",
-    percentage: "85%",
-  },
-  {
-    label: "NodeJS/ExpressJS - 80%",
-    percentage: "80%",
-  },
-  {
-    label: "MongoDB - 80%",
-    percentage: "80%",
-  },
-  {
-    label: "PostgresSQL - 80%",
-    percentage: "80%",
-  },
-  {
-    label: "Material-Ui - 80%",
-    percentage: "80%",
-  },
-  {
-    label: "Bootstrap- 80%",
-    percentage: "80%",
-  },
-  {
-    label: "GitHub - 90%",
+    label: "React",
     percentage: "90%",
   },
   {
-    label: "Heroku - 70%",
-    percentage: "70%",
+    label: "NodeJS/ExpressJS",
+    percentage: "90%",
+  },
+  {
+    label: "MongoDB",
+    percentage: "80%",
+  },
+  {
+    label: "PostgresSQL",
+    percentage: "80%",
+  },
+  {
+    label: "Material-Ui",
+    percentage: "90%",
+  },
+  {
+    label: "Bootstrap",
+    percentage: "90%",
+  },
+  {
+    label: "GitHub",
+    percentage: "100%",
+  },
+  {
+    label: "Heroku",
+    percentage: "100%",
   },
 ];
 
